@@ -103,18 +103,14 @@ python manage.py apply_corporate_actions
 
 - **Monitoring and reliability**: Implement monitoring for query latency, database load, replication lag, storage growth, and ingestion failures, alongside automated backups and recovery.
 
-- **What I would do differently with more time**: Conduct proper capacity planning, perform large-scale load testing, improve observability, introduce a dedicated analytical database if needed, and automate data lifecycle management and infrastructure deployment.
-
 - **Price Prediction:** Use ML models (LSTM, XGBoost) to analyze historical data and forecast potential price movements.
 
 - **Trend Detection:** Apply machine learning to identify market trends, patterns, and momentum across 5,000 instruments.
-
-- **Anomaly Detection:** Use Isolation Forest or autoencoders to detect unusual price movements, volume spikes, and suspicious trading patterns.
-
+  
 - **Sentiment Analysis:** Use NLP on financial news, announcements, and social media to understand market sentiment.
 
 - **Smart Recommendations:** Build recommendation models to identify instruments matching user-defined risk profiles and investment preferences.
 
 - **Automated Insights:** Use LLMs to generate natural-language summaries of market movements, technical indicators, and portfolio performance.
 
-- Risk Management: Use ML models to estimate volatility, identify potential risks, detect unusual portfolio exposure, and support risk-based alerts.
+- **Risk Management:** Use ML models to estimate volatility, identify potential risks, detect unusual portfolio exposure, and support risk-based alerts.

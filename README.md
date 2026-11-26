@@ -89,3 +89,32 @@ python manage.py apply_corporate_actions
 - CashLedgerEntry `(portfolio, created_at)` supports portfolio ledger queries.
 
 
+## What i would do differently with more time
+
+- **Database partitioning**: Implement time-based partitioning (monthly/yearly) and composite indexes on (instrument_id, timestamp) to efficiently query 10 years of data across 5,000 instruments.
+
+- **Data archiving**: Separate data into hot, warm, and cold storage. Keep recent data in the primary database and move older historical data to compressed, cost-effective object storage (Parquet).
+
+- **Read replicas**: Introduce read replicas to distribute reporting and historical query workloads while keeping the primary database focused on ingestion and writes.
+
+- **Caching**: Use Redis to cache frequently accessed instrument prices, historical queries, metadata, and precomputed aggregates.
+
+- **Asynchronous processing**: Introduce Kafka or background workers for ingestion, data validation, aggregation, and archival to handle increasing data volumes reliably.
+
+- **Monitoring and reliability**: Implement monitoring for query latency, database load, replication lag, storage growth, and ingestion failures, alongside automated backups and recovery.
+
+- **What I would do differently with more time**: Conduct proper capacity planning, perform large-scale load testing, improve observability, introduce a dedicated analytical database if needed, and automate data lifecycle management and infrastructure deployment.
+
+- **Price Prediction:** Use ML models (LSTM, XGBoost) to analyze historical data and forecast potential price movements.
+
+- **Trend Detection:** Apply machine learning to identify market trends, patterns, and momentum across 5,000 instruments.
+
+- **Anomaly Detection:** Use Isolation Forest or autoencoders to detect unusual price movements, volume spikes, and suspicious trading patterns.
+
+- **Sentiment Analysis:** Use NLP on financial news, announcements, and social media to understand market sentiment.
+
+- **Smart Recommendations:** Build recommendation models to identify instruments matching user-defined risk profiles and investment preferences.
+
+- **Automated Insights:** Use LLMs to generate natural-language summaries of market movements, technical indicators, and portfolio performance.
+
+- Risk Management: Use ML models to estimate volatility, identify potential risks, detect unusual portfolio exposure, and support risk-based alerts.

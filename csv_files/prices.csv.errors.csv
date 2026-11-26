@@ -1,0 +1,6 @@
+line,reason,row
+22,Unknown ticker,"{'exchange_code': 'NSE', 'ticker': 'ICICIBANK', 'date': '2026-11-20', 'open': '1200.000000', 'high': '1220.000000', 'low': '1190.000000', 'close': '1210.000000', 'volume': '680000'}"
+23,Unknown ticker,"{'exchange_code': 'NSE', 'ticker': 'ICICIBANK', 'date': '2026-11-21', 'open': '1210.000000', 'high': '1230.000000', 'low': '1205.000000', 'close': '1225.000000', 'volume': '720000'}"
+24,Unknown ticker,"{'exchange_code': 'NSE', 'ticker': 'ICICIBANK', 'date': '2026-11-22', 'open': '1225.000000', 'high': '1240.000000', 'low': '1215.000000', 'close': '1230.000000', 'volume': '700000'}"
+25,Unknown ticker,"{'exchange_code': 'NSE', 'ticker': 'ICICIBANK', 'date': '2026-11-23', 'open': '1230.000000', 'high': '1250.000000', 'low': '1220.000000', 'close': '1245.000000', 'volume': '810000'}"
+26,Unknown ticker,"{'exchange_code': 'NSE', 'ticker': 'ICICIBANK', 'date': '2026-11-24', 'open': '1245.000000', 'high': '1260.000000', 'low': '1235.000000', 'close': '1255.000000', 'volume': '850000'}"
